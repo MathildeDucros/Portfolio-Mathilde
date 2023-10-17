@@ -19,7 +19,6 @@ import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
-import mui from "./tech/mui.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
@@ -39,6 +38,10 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import movies from "./movies.png";
 import morning from "./morning.png";
+
+import CometCall from "./CometCall.png";
+import Faceup from "./Faceup.png";
+import Locapic from "./Locapic.png";
 
 export {
   logoM,
@@ -70,7 +73,6 @@ export {
   starbucks,
   tesla,
   carrent,
-  mui,
   jobit,
   tripguide,
   expo,
@@ -79,4 +81,7 @@ export {
   morning,
   movies,
   webclic,
+  CometCall,
+  Locapic,
+  Faceup,
 };

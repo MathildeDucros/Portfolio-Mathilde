@@ -15,7 +15,6 @@ import {
   git,
   github,
   figma,
-  mui,
   carrent,
   jobit,
   tripguide,
@@ -27,7 +26,13 @@ import {
   emploi,
   morning,
   movies,
+  CometCall,
+  Locapic,
+  Faceup,
 } from "../assets";
+// import faceUp from "../video/faceUp.mp4";
+// import Locapick from "../video/Locapick.mp4";
+// import ComEtCall from "../video/ComEtCall.mp4";
 
 export const navLinks = [
   {
@@ -37,6 +42,10 @@ export const navLinks = [
   {
     id: "work",
     title: "Travail",
+  },
+  {
+    id: "projets",
+    title: "Projets",
   },
   {
     id: "contact",
@@ -117,8 +126,8 @@ const technologies = [
     icon: expo,
   },
   {
-    name: "Material-UI ",
-    icon: mui,
+    name: "Vite ",
+    icon: vitejs,
   },
   {
     name: "NextJS.13 ",
@@ -182,36 +191,111 @@ const experiences = [
   // },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
-
 const projects = [
   {
+    name: "Com-et-Call",
+    spe: "mobile",
+    description:
+      "L'application qui vous fournit le bon contacte en fonction de la problématique que votre enfant rencontre à école . Problème de transport, de cantine, de professeur non remplacé..... Si votre problématique n'apparait pas dans notre liste, vous avez la possibilité d'obtenir de l'aide auprès de ChatGPT.",
+    tags: [
+      {
+        name: "MERN-stack",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "OpenAI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Expo",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React Native",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Projet de fin de Batch",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: CometCall,
+    // video: ComEtCall,
+    source_code_link: "https://github.com/BriceMoutanin/frontend-cometcall",
+    // web_link: "https://dalle-client-pink.vercel.app/",
+  },
+  {
+    name: "FaceUp",
+    spe: "mobile",
+    description:
+      "FaceUp est une application mobile permettant de prendre des photos et de les stocker dans une galerie d’images.",
+    tags: [
+      {
+        name: "TypeScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Expo",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React Native",
+        color: "orange-text-gradient",
+      },
+
+      {
+        name: "Cloudinary",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Projet Capsule",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Faceup,
+    // video: faceUp,
+    // source_code_link: "https://github.com/MathildeDucros/dalle-client",
+    //web_link: "https://dalle-client-pink.vercel.app/",
+  },
+  {
+    name: "Locapic",
+    spe: "mobile",
+    description:
+      "Locapic est une application mobile permettant de géolocaliser un utilisateur en matérialisant ses déplacements sur une carte interactive et en offrant la possibilité d’y ajouter des points d'intérêt et de les retrouver simplement.",
+    tags: [
+      {
+        name: "MERN-stack",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Expo",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React Native",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Redux",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Projet Capsule",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Locapic,
+    // video: Locapick,
+    source_code_link: "https://github.com/MathildeDucros/front-locapic",
+    // web_link: "https://dalle-client-pink.vercel.app/",
+  },
+  {
     name: "Dall-E",
+    spe: "web",
     description:
       "Clone de Dall-E, générateur d'images en utilisant une intelligence artificielle",
     tags: [
@@ -242,6 +326,7 @@ const projects = [
   },
   {
     name: "Codex",
+    spe: "web",
     description:
       "Codex, clone de chatGPT mais centralisé sur les besoins d'un développeur.",
     tags: [
@@ -267,7 +352,8 @@ const projects = [
     web_link: "https://codex-ai-beige.vercel.app/",
   },
   {
-    name: "Promptopia (work in progress)",
+    name: "Promptopia",
+    spe: "web",
     description:
       "Mise en pratique de la dernière version de Next JS 13. Promptopia est similaire à Twitter, mais les utilisateurs y postent des prompts pour ChatGPT.",
     tags: [
@@ -290,6 +376,7 @@ const projects = [
   },
   {
     name: "MorningNews",
+    spe: "web",
     description:
       "MorningNews est un site d’affichage des news récentes du journal The Verge. Vous pourrez également sauvegarder vos articles préférés et les retrouver en vous connectant à votre compte.",
     tags: [
@@ -312,6 +399,7 @@ const projects = [
   },
   {
     name: "MyMoviz",
+    spe: "web",
     description:
       "MyMoviz est un site qui va vous permettre d’afficher les derniers films sortis avec la possibilité de créer une wishlist, placer un compteur de vues et d’évaluer chacun des films présentés.",
     tags: [
@@ -334,4 +422,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };
